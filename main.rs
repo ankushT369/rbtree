@@ -133,7 +133,7 @@ impl Tree {
     }
 
     //after every insert() we have to check if the tree is unbalanced 
-    //which usually happens in BST and in every insert_fix() checks 
+    //which usually happens in BST and every insert_fix() checks 
     //the rules and if any of them are violated then it does its respective case operations.
     unsafe fn insert_fix(&mut self, mut node: *mut Node) {
         unsafe {
